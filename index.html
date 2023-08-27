@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js"></script>
+</head>
+
+<body>
+  <div class="appVoice">
+
+    <div class="contenedor">
+      <h1>VOZ - TEXTO </h1>
+      <div id="iconVoz" class="icon"></div>
+      <div class="start-stop">
+        <button id="btnStart" class="btn">Hablar</button>
+
+        <button id="btnStop" class="btn">Detener</button>
+      </div>
+      <textarea name="transcript" class="text" id="text-area"></textarea>
+      <button id="nueva-area" class="nuevo">Nuevo</button>
+    </div>
+    <button id="listarTexto" class="btn-listar">&#8250</button>
+    <div class="listado">
+      <h1>TEXTOS</h1>
+      <button id="btn-borrar" class="eliminar">Remover</button>
+      <div id="mistextos" class="textos">
+
+      </div>
+    </div>
+  </div>
+
+
+  <script src="./main.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding: 0;
+    box-sizing: inherit;
+    background-color: #212E4E;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction:  column;
+    justify-content: center;
+    align-items: center;
+    overscroll-behavior-y: auto;
+    user-select: none;
+
+}
+h1{
+    text-align: center;
+    color: #1AFFBB;
+}
+.appVoice{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.contenedor{
+   width: 45%;
+   height:auto;
+   background-color: #333f5e;
+   display: flex;
+   flex-direction: column;
+   justify-content:center ;
+   align-items: center;
+   gap: 30px;
+   position: relative;
+   overscroll-behavior-y: auto;
+}
+.btn-listar{
+    width: 70px;
+    height: 50px;
+    padding: 2px;
+    font-weight: 700;
+    font-size: 40px;
+    color: #1AFFBB;
+    background-color: #333f5e;
+    outline: none;
+    border-style: none;
+    border-radius:6px ;
+    align-self: center;
+   
+    
+}
+.listado{
+    width: 35%;
+    height: auto;
+    background-color: #333f5e;
+    box-shadow: 0 2px 3px 5px #424d6b;
+    position: relative;
+
+}
+.start-stop{
+    
+    width: 90%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:50px;
+   }
+   .btn{
+    width: 120px;
+    height: 35px;
+    border-radius: 10px;
+    margin: 20px ;
+    color: #1AFFBB;
+    font-size: 20px;
+    background-color: #181A1B;
+    outline: none;
+    border-style: none;
+    cursor: pointer;
+   }
+
+.icon{
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    background-color: rgb(162, 76, 76);
+    display: none;
+    animation: hablando 1000ms infinite ;
+}
+@keyframes hablando{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.12);
+    }
+}
+.text{
+    width: 65%;
+    height: 320px;
+    background-color: #181A1B;
+    outline: none;
+    border-style: none;
+    border-radius: 20px ;
+    padding: 20px;
+    font-size: 22px;
+    color:#1AFFBB;
+}
+.nuevo{
+    width: 65%;
+    height: 50px;
+    background-color: #181A1B;
+    color: #1AFFBB;
+    border: none;
+    outline: none;
+    border-radius:7px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+ .textos{
+    width: 90%;
+    min-height:auto ;
+    margin:auto;
+    /*border: 1px solid white;*/
+    overflow-y: auto;
+    
+ }
+ .estiloTexto{
+    background-color: #181A1B;
+    color: #1AFFBB;
+    font-size:20px;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border-radius: 7px;
+ }
+ .eliminar{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    width: 100px;
+    height: 40px;
+    background-color: #181A1B;
+    color:#1AFFBB ;
+    font-size: 20px;
+    padding: 5px;
+    border-style: none;
+        outline: none;
+        border-radius: 5px;
+ }
+
+  .eliminar:hover,.btn-listar:hover, .btn:hover,.nuevo:hover{
+    filter: brightness(1.4); 
+    cursor: pointer;
+  }
